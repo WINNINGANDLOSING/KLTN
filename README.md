@@ -19,26 +19,7 @@ Dr. Tran Luong Quoc Dai
 
 **Project structure**
 
----
-project_root/
-├── source/
-│   ├── back-end/
-│   │   ├── rag_pipeline.py               <- Contains RAG pipeline implementation
-│   │   ├── prompts.py                    <- Contains prompt helpers for LLMs
-│   │   └── api.py                        <- Contains FastAPI implementation
-│   ├── front-end/
-│   │   ├── ver1/                         <- Django frontend
-│   │   ├── ver2/                         <- Next.js frontend
-│   ├── evaluation/                       <- Evaluation scripts
-│   └── README.md                         <- Project overview and instructions
-├── report/
-│   ├── TranLuongQuocDai_520k0140_52000189_BaoCao.pdf                 <- Final report in PDF format
-│   └── TranLuongQuocDai_520k0140_52000189_BaoCao.docx                <- Final report in Word format
-└── resources/
-    ├── models/                           <- Saved models
-    ├── evaluation_results/               <- Evaluation results of the models
-    └── dataset/                          <- Datasets used in the project
----
+
 
 # 3. Embeddings and LLMs
 
