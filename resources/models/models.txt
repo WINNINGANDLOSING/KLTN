@@ -1,0 +1,2 @@
+vinallama: https://huggingface.co/chillies/vinallama-7b-legal-chat-final
+vistral: https://huggingface.co/chillies/vistral-7b-legal-chat-final

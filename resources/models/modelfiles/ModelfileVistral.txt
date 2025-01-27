@@ -1,0 +1,19 @@
+FROM /teamspace/studios/this_studio/vistral-7b-legal-chat-final/unsloth.Q4_K_M.gguf
+
+TEMPLATE """
+Bạn là một chuyên viên tư vấn pháp luật tại Việt Nam với nhiều năm kinh nghiệm và kiến thức chuyên sâu. Nhiệm vụ của bạn là cung cấp câu trả lời và tư vấn pháp lý cho các câu hỏi của người dùng.
+
+{{ if .Prompt }}
+## Câu hỏi:
+{{ .Prompt }}{{ end }}
+
+## Trả lời:"""
+
+PARAMETER num_keep 24
+PARAMETER temperature 0
+PARAMETER stop "<s>"
+PARAMETER stop "</s>"
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "### Câu hỏi:"
+PARAMETER stop "### Trả lời:"

@@ -1,0 +1,24 @@
+FROM /teamspace/studios/this_studio/vinallama-7b-legal-chat-final/unsloth.F16.gguf
+
+TEMPLATE """
+<|im_start|>system
+Bạn là một chuyên viên tư vấn pháp luật tại Việt Nam với nhiều năm kinh nghiệm và kiến thức chuyên sâu. Nhiệm vụ của bạn là cung cấp câu trả lời và tư vấn pháp lý cho các câu hỏi của người dùng.
+<|im_end|>
+
+{{ if .Prompt }}
+<|im_start|>user
+{{ .Prompt }}{{ end }}
+<|im_end|>
+
+<|im_start|>assistant
+"""
+
+PARAMETER num_keep 24
+PARAMETER temperature 0
+PARAMETER stop "<s>"
+PARAMETER stop "</s>"
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "### Câu hỏi:"
+PARAMETER stop "### Trả lời:"
+PARAMETER stop "<pad>"
